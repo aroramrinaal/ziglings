@@ -1,5 +1,6 @@
 const std = @import("std");
+const print = std.debug.print;
 
 pub fn main() void {
-    std.debug.print("hello, {s}!\n", .{"zig"});
+    print("hello, {s}\n", .{"ZIG"});
 }
