@@ -14,8 +14,10 @@
 // Perhaps knowing this will help solve the errors we're getting
 // with this little program?
 //
+
 const std = @import("std");
+const print = std.debug.print;
 
 pub fn main() void {
-    std.debug.print("Hello world!\n", .{});
+    print("Hello world!\n", .{});
 }

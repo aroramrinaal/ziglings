@@ -12,9 +12,10 @@
 //
 
 const std = @import("std");
+const print = std.debug.print;
 
 pub fn main() void {
-    std.debug.print("Standard Library.\n", .{});
+    print("Standard Library.\n", .{});
 }
 
 // For the curious: Imports must be declared as constants because they
