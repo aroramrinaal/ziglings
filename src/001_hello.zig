@@ -18,6 +18,18 @@
 const std = @import("std");
 const print = std.debug.print;
 
-pb fun main() void {
-    print("ziglings day2", .{})
+const array : [5]u8 = [5]u8{1,2,3,4,5};
+const length = array.len;
+var i: u8 = 0;
+
+pub fn main() void {
+    print("ziglings day2\n\n\n", .{});
+
+    while(true) {
+        print("{d}\n", .{array[i]});
+        i += 1;
+        if (i == length) {
+            break;
+        }
+    }
 }
